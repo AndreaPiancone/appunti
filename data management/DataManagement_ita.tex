@@ -48,7 +48,7 @@ Si tende a preferire la disponibilità alla coerenza per ottenere dati non aggio
 Nato negli anni '70, il modello relazionale è ben sviluppato e conosciuto e gode di un'ottima reputazione: è stato lo standard \textit{de facto} per anni ed è ancora considerato il migliore per garantire l'integrità dei dati (permessa dal suo schema rigido).
 Il modello relazionale segue quattro proprietà rappresentate dalla sigla ACID:
 \begin{itemize}
-\item Atomicity: l'operazione è \textit{atomica}, ovvero o avviene per intero (\verb|COMMIT|) o restituisce un errore e il database ritorna alla forma iniziare (\verb|ROLLBACK|);
+\item Atomicity: l'operazione è \textit{atomica}, ovvero o avviene per intero (\verb|COMMIT|) o restituisce un errore e il database ritorna alla forma iniziale (\verb|ROLLBACK|);
 \item Consistency: i nuovi dati inseriti rispecchiano lo schema prestabilito (o l'operazione di inserimento fallisce);
 \item Isolation: le singole operazioni non influiscono sulle altre; per fare questo il database costruisce una coda di esecuzione dei processi, così lo stato del database non muta durante l'esecuzione di una singola richiesta;
 \item Durability: la persistenza del file è garantita (virtualmente a tempo indefinito) anche in caso di crash del sistema; per ottenere questo risultato sono utilizzati backup e log files.
